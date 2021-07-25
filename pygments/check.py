@@ -242,3 +242,15 @@ class check:
                 for arr in style:
                     colors.append(arr)
         return colors
+    
+    def hex_to_dec(hexcode):
+        hex= [ord(n) - 55 if n in list("ABCDEF") else ord(n) - 48 for n in  hexcode.upper()]
+        dec = [hex[-i - 1] * math.pow(16, i) for i in range(len(hex))]
+    return sum(dec)
+
+    def large_scale(self)
+        large=False
+        if int(x.hex_to_dec)>=18 #x means the vlaue of font 
+            large=True
+    return large
+
